@@ -29,6 +29,10 @@ nav a{
     background-color: #8b5cf6;
     transition: all 0.5s ease-in-out;
 }
+a{
+    color: #a9a6b1;
+    text-decoration: none;
+}
 nav a:hover{
   background-color: #7c3aed;
   transform: scale(1.02);
