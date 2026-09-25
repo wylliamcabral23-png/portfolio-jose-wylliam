@@ -191,7 +191,7 @@ p{
     font-size: 0.9rem;
 }
 section{
-    margin: 15px auto;
+    margin: 30px auto;
     padding: 15px;
     background-color: #1e293b;
     border-radius: 15px;
@@ -203,23 +203,8 @@ section{
     margin-bottom: 20px;
     background-color: #2c2e39;
 }
-.img{
-    display: block;
-    margin: 0 auto 20px;
-    
-    width: 100px;
-    height: auto;
-}
-.btn-projetos{
-    display: center;
-    margin-top: 10px;
-    padding: 10px 15px;
-    background-color: transparent;
-   
-    text-decoration: none;
-    border-radius: 10px;
-    transition: 0.3s;
-}
+
+
 .ul{
     margin-bottom:  10px;
     list-style-type: none;
@@ -227,7 +212,7 @@ section{
 
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 12px;
 }
 .li{
     margin-bottom: 10px;
@@ -238,18 +223,30 @@ section{
     background-color: #2C2E39;
 
     border-color: #2510e0;
-    transform: translateY(-2px);
+    transform: none;
 
     min-width: 100px;
     text-align: center;
+
+    margin-right: 8px;
+    font-size: 1.1rem;
 }
+li:hover{
+    border-color: #20d147;
+    transform: translateY(-2px);
+}
+.li i {
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+
 #habilidades {
     border: 1px solid #334155;
 
 }
 #habilidades h2{
     text-align: center;
-    color: #8b9af0;
+    color: #fff;
     margin-bottom: 25px;
 }
 #formacao {
@@ -257,8 +254,11 @@ section{
 }
 #formacao h2{
     text-align: center;
-    color: #8b9af0;
+    color: #fff;
     margin-bottom: 25px;
+}
+#formacao .ul{
+    flex-direction: column;
 }
 .status{
     display: flex;
@@ -280,6 +280,77 @@ section{
 .andamento {
     background-color: rgba(245, 197, 66, 0.12);
     color: #d6a900;
+}
+#projetos {
+    border: 1px solid #334155;
+    text-align: center;
+    padding: 25px;
+}
+.titulo-projeto {
+    color: #c4b5fd;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+.descricao-projeto {
+    color: #cbd5e1;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+.btn-projetos{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background-color: #8b5cf6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+.btn-projetos:hover{
+    background-color: #7c3aed;
+    transform: scale(1.05);
+}
+#contato {
+    border: 1.5px solid #334155;
+    text-align: center;
+    padding: 25px;
+}
+.contato {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.contato a{
+    display: flex;
+    align-items: center;
+    gap: 10PX;
+    padding: 10px;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    background-color: #2C2E39;
+    color: #e2e8f0;
+    transition: 0.3s ease;
+}
+.contato i{
+    font-size: 1.3rem;
+}
+.contatos a:first-child i {
+    color: #0a66c2;
+}
+.linkedin-icon {
+    color: #0a66c2;
+}
+.email-icon{
+    color:  #c4b5fd;
+}
+.contato a:hover{
+    border-color: #8b5cf6;
+    color: #c4b5fd;
+    transform: translateY(-2px);
+}
+#contato h2 {
+    margin-bottom: 25px;
 }
 @media (max-width: 600px) {
     nav{
